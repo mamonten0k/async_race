@@ -3,17 +3,17 @@ import './Garage.scss';
 const Garage = (cars: Array<string>): string => {
 	return `
 		<div class="controls">
-			<h1 class="garage__title">Controls</h1>
+			<h1 class="controls__title">Controls</h1>
 			<div class="row row-create">
-				<input class='input input-text' id="create-with-name" type="text" />
-				<input class='input input-palette' id="create-with-color" type="color" id="colorpicker" value="#ff7300">
+				<input class='input input-text' id="create-with-name" type="text" placeholder='Choose name'/>
+				<input class='input input-palette' id="create-with-color" type="color" value="#ff7300">
 				<button class="btn btn-control" id="btn-create">
 					Create
 				</button>
 			</div>
 			<div class="row row-update">
-				<input class='input input-text' id="name-update"  type="text" />
-				<input class='input input-palette' id="color-update" type="color" id="colorpicker" value="#1e1e1e">
+				<input class='input input-text' id="name-update"  type="text" placeholder='Change current name'/>
+				<input class='input input-palette' id="color-update" type="color" value="#1e1e1e">
 				<button class="btn btn-control" id="btn-update">
 					Update
 				</button>
