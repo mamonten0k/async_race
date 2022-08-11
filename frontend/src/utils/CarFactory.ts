@@ -67,7 +67,7 @@ class CarFactory implements IFactory {
 		carNode.innerHTML = carTrack;
 
 		if(volTotal === 0) {
-			this.parentNode?.innerHTML = "";	
+			this.parentNode?.replaceChildren('');
 		}
 
 		this.parentNode?.appendChild(carNode);	
@@ -97,12 +97,15 @@ class CarFactory implements IFactory {
 	}
 
 	reset = () => {
-		this.parentNode?.innerHTML = `
-				<li style='color: gray; font-size: 1.1rem; padding-top: 1rem;'>
-					There are no Cars left in your Garage
-				</li>`;
+		const replacement = document.createElement('li');
+		replacement.innerHTML = 'There are no Cars left in your Garage';
+		replacement.setAttribute(
+			'style',
+			'color: gray; font-size: 1.1rem; padding-top: 1rem;',
+		);
 
 		localStorage.setItem('garageVol',`0`);
+		this.parentNode?.replaceChildren(replacement);
 		if(this.carsTotal) this.carsTotal.innerHTML = `Garage (0)`;
 	}
 }
