@@ -3,10 +3,12 @@ import './CarIcon.scss';
 const CarIcon = (color: string):string => {
 	return `
 		<div class="car">
-			<span class="car__icon" id="car-placeholder">
+			<span>
 				<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 					width="153.000000pt" height="70.000000pt" 
-					fill="${color}">
+					fill="${color}"
+					class="car__icon" 
+				>
 					<g transform="translate(0.000000, 28.000000) 
 						scale(0.0800000,-0.0800000)
 						matrix(0,-0.25177426,0.25177426,0,19.140485,207.86588) "

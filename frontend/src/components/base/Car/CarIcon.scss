@@ -1,11 +1,6 @@
 .car {
 	&__icon {
-		width: 2rem;
-		height: 2rem;
-
-		svg {
-			margin-left: -3.7rem;
-			transform: rotate(-180deg);
-		}
+		transform: rotate(-180deg);
+		margin-left: -3.7rem;
 	}
 }
