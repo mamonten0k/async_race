@@ -52,6 +52,11 @@ main {
 	&:hover {
 		color: rgb(202, 81, 0);
 	}
+
+	&-selected {
+		font-size: 1.2rem;
+		color: rgb(202, 81, 0);
+	}
 }
 
 .input {
