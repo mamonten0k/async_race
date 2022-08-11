@@ -1,0 +1,44 @@
+.track {
+	padding-top: 1rem;
+
+	&__row {
+		display: flex;
+
+		padding-bottom: 0.5rem;
+
+		column-gap: 0.8rem;
+	}
+
+	&__id {
+		text-transform: uppercase;
+	}
+
+	&__item {
+		display: flex;
+
+		justify-content: space-between;
+		align-items: center;
+
+		border-top: 3px solid black;
+		border-bottom: 3px solid black;
+
+		&-finish {
+			color: white;
+			padding: 1rem 1.23rem;
+
+			font-size: 1rem;
+			font-weight: 600;
+			letter-spacing: 0.1rem;
+			text-transform: uppercase;
+
+			transform: rotate(90deg) translateY(-26px);
+			background: repeating-linear-gradient(
+				-45deg,
+				rgb(77, 77, 77),
+				rgb(77, 77, 77) 10px,
+				rgb(0, 0, 0) 10px,
+				rgb(0, 0, 0) 20px
+			);
+		}
+	}
+}
